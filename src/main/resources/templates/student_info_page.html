@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Student info page</h1>
+
+  <h3 th:text="${'ID: ' + student.id}"></h3>
+  <h3 th:text="${'Name: ' + student.name}"></h3>
+
+  <a th:href="@{'/students'}">На главную страницу со списком студентов</a>
+</body>
+</html>
